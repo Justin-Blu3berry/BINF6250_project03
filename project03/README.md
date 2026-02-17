@@ -57,7 +57,9 @@ PWM reflects the true binding possibilities of p53.
 
 ### Part 1: Setup and Initialization 
 ```
-Initialize random number generators (use seed) 
+Initialize random number generators (use seed)
+
+Use the code snippet Marcus gave us in an announcement to load the reduced dataset into a list called 'seqs'
 
 Randomly initialize motifs: 
 
@@ -141,11 +143,19 @@ Description of the team's learning points
 Description of the stumbling blocks the team experienced
 
 # Personal Reflections
-## Group Leader
+## Group Leader: Shameem
 Group leader's reflection on the project
 
-## Other member
-Other members' reflections on the project
+## Other members
+
+### Stefanie: 
+
+
+### Justin: 
+Working with Stefanie and Shameem for this project was really pleasant, and I think that already knowing each other from our Genomics class last semester really helped us work well together. I found that a lot of our issues with this project were really about the size of the data in the alignment, as processing millions of reads, especially with a Gibbs Sampling approach where we're making random selections and exhaustively scoring motifs, threatened to make our runtime unfeasibly long if we weren't careful. I think that our process of coming up with the pseudocode for this project was really interesting, as it came down to both figuring out how to implement a Gibbs Sampling algorithm and being mindful of how our implementation choices would affect our program's efficiency. While I really would've liked to have used macs2 peak data to narrow down the sequences we used, I'm still really happy with the sub-sampling approach we came up with for handling the K562 data, and we likely didn't have the time to implement everything with macs2 because of our other work that we needed to take care of. While I was very involved in the pseudocode process, I feel bad for not getting to help with the python scripting. Between a busy schedule and my computer being unreasonably uncooperative (syncing my fork while in Pycharm would cause the ipynb file to corrupt, forcing it to be viewed as plaintext, with seemingly no long-term solution other than uninstalling the IDE and deleting my fork completely), I did not get many chances to help out with the code. Thankfully, Stefanie was able to get a lot of the scripting done, and I massively am massively appreciative of the effort she put in. I'm grateful that my team was so sympathetic to the difficulties I was having getting my environment working and that I was still able to help out earlier on during the planning stages. I'm really happy both with how our project came together in the end and that my environment finally works without breaking the second it attempts to interact with a github repository. 
 
 # Generative AI Appendix
-As per the syllabus
+As per the syllabus, the AI we used was _______, and the prompts we used are shown below: 
+Prompts go here (if applicable)
+
+If no ai use: Generative AI was not used on this project
