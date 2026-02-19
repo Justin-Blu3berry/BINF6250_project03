@@ -158,7 +158,4 @@ Working with Stefanie and Shameem for this project was really pleasant, and I th
 
 
 # Generative AI Appendix
-As per the syllabus, the AI we used was _______, and the prompts we used are shown below: 
-Prompts go here (if applicable)
-
-If no ai use: Generative AI was not used on this project
+As per the syllabus, the AI we used was Microsoft Copilot, and the prompts were used to aid in the development of code based off the pseudocode we drafted.
