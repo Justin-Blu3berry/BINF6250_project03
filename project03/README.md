@@ -137,8 +137,10 @@ Plug the final convergence PWM into seqlogo and save the resulting logo to a png
 ```
 
 # Successes
+We found that already having knowing each other from taking Genomics together last semester helped us work well together as a team and get a strong start on the project. The sub-sampling approach we settled on for handling the large volume of reads in the original P53 dataset ended up being pretty successful for how simple and easy it was for us to implement. We definitely felt reasonably confident with the concept of Gibbs Sampling, with our issues largely stemming from the size of the dataset. 
 
 # Struggles
+The enormity of the initial P53 dataset made it difficult for us to plan out a method to handle so many reads, especially with a Gibbs Sampling approach, where we were concerned about how long it would take to score such a large number of reads based on every other read around them. We elected to solve this by randomly pulling out 99 sequences in addition to the one being scored and using just those 99 sequences to make the PWM (as opposed to making the PWM be based on all 3 million reads) before putting them all back and randomly sampling again. When we used this approach with only 5000 reads from the 3 million read dataset, we got a logo that showed a distinct motif, which was promising and indicated that our approach had some merit. We considered using macs2 to identify the peaks in the P53 dataset so we would only need to use the sequences encapsulated by those peaks. However, we found that the data were not as enriched as expected, which supported us switching to searching for the Shine-Dalgarno motif in the bacterial dataset in week 2 of the project. 
 
 # Personal Reflections
 ## Group Leader: Shameem
