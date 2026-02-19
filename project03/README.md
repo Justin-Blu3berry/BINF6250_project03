@@ -137,10 +137,14 @@ Plug the final convergence PWM into seqlogo and save the resulting logo to a png
 ```
 
 # Successes
-Description of the team's learning points
+One of the biggest successes of this project was our team collaboration. Since we had already worked together in a previous Genomics course, we were able to communicate efficiently and divide responsibilities in a way that played to our strengths. The pseudocode development process was particularly strong; we spent significant time carefully mapping out the Gibbs Sampling algorithm before implementing it. This planning phase helped us think critically about both the conceptual MCMC framework and the practical considerations of runtime efficiency. Translating the theoretical content from lecture slides into a working mental model was challenging but ultimately very rewarding.
+
+We are also proud of how we handled the scale of the K562 dataset. Processing millions of reads with a Gibbs Sampling approach could easily have resulted in unmanageable runtimes. Although we initially considered using MACS2 peak calls or a sliding window strategy to reduce the search space, we ultimately implemented a thoughtful sub-sampling strategy that allowed us to balance computational feasibility with biological relevance. Even though we were not able to incorporate every idea due to time constraints, the final pipeline reflects careful design decisions and strong conceptual understanding. Overall, we are very satisfied with how the project came together.
 
 # Struggles
-Description of the stumbling blocks the team experienced
+The primary technical challenge we faced was the sheer size of the alignment data. Gibbs Sampling requires repeated random selections and motif scoring, which can quickly become computationally expensive when applied to millions of reads. Much of our early effort focused on ensuring that our implementation would be efficient enough to run within a reasonable timeframe. This required us to be deliberate about algorithm design and mindful of how each implementation choice would affect performance.
+
+Another major hurdle was fully grasping the MCMC framework and translating it into clear, actionable pseudocode. Converting theoretical descriptions of Gibbs Sampling into a structured algorithm required multiple rounds of discussion and refinement. On a practical level, we also encountered environment and tooling issues. In particular, syncing repositories in PyCharm led to repeated notebook corruption issues, which limited some team members’ ability to contribute directly to the scripting. Additionally, competing coursework and time constraints prevented us from implementing some of our more ambitious ideas, such as integrating MACS2 peak data. Despite these obstacles, we supported one another, adapted our approach when necessary, and were able to deliver a final product that reflects both persistence and growth.
 
 # Personal Reflections
 ## Group Leader: Shameem
